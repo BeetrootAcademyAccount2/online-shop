@@ -2,12 +2,6 @@
 
 **An online shop created with Html**
 
-*This is created to practice git*
+_This is created to practice git_
 
-[Google] (http://google.com)
-
-```javascript
-
-console.log("Best site ever")
-
-```
+This is the description of our online shop.
