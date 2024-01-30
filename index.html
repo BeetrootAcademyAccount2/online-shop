@@ -2,13 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Ivo Nikolov" />
+    <meta name="description" content="Online shop" />
+    <meta name="keywords" content="Online, shop, products, website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Shop</title>
+    <style>
+      section {
+        background-color: bisque;
+      }
+    </style>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/script.js" type="text/javascript"></script>
   </head>
   <body>
     <header id="page-header">
       <h1>Online Shop</h1>
-      <img src="./images/shop-w.jpg" alt="shop image" />
+      <hr />
+      <figure>
+        <picture>
+          <source media="(min-width:800px)" srcset="./images/shop-w.jpg" />
+          <img src="./images/shop-s.jpg" alt="shop image" style="width: auto" />
+        </picture>
+
+        <figcaption>Online shop</figcaption>
+      </figure>
       <nav>
         <ul>
           <li><a href="">News</a></li>
@@ -30,8 +48,8 @@
         <h2>News</h2>
         <article>
           <h3>
-            Telecommunication giant O2 to release half of its work force in
-            favor of AI
+            Telecommunication giant O<sub>2</sub> to release half of its work
+            force in favor of AI
           </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -42,24 +60,14 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          Written by John Doe
-        </article>
-        <article>
-          <h3>Online shop selling high quality phones for as low as 19.99$</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          Written by John Doe
+          <address>
+            Written by <a href="mailto:joe@example.com">John Doe</a>
+          </address>
         </article>
         <article>
           <h3>
-            A modern take on the Godfather, written by AI, becomes a bestseller
+            Online shop selling high quality phones for as low as
+            19<sup>99</sup>$
           </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -70,7 +78,27 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          Written by John Doe
+          <address>
+            Written by <a href="mailto:joe@example.com">John Doe</a>
+          </address>
+        </article>
+        <article>
+          <h3>
+            A modern take on the <cite>Godfather</cite>, written by AI, becomes
+            a bestseller
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <address>
+            Written by <a href="mailto:joe@example.com">John Doe</a>
+          </address>
         </article>
         <article>
           <h3>AI makes the world a better place</h3>
@@ -116,90 +144,121 @@
       <section id="about">
         <h2>About us</h2>
         <p>
-          Online shop was founded in 2020 by <i>Mr. Moo Money</i> as part of the
-          AOE family.<b
-            >We are the only shop with all robot generated personel.</b
+          Online shop was founded in
+          <time datetime="2020">2020</time> by <em>Mr. Moo Money</em> as part of
+          the
+          <abbr title="Alternative Online Enterprise">AOE</abbr> family.<strong
+            >We are the only shop with all robot generated personel.</strong
           >
           We provide a wide range of products from laptops to mobile phones. We
           pride ourselves on having the best quality for the best prices. We
           have given up on plastic and started to send online orders in
-          cardboards."In order to make the best business posible you should
-          sacrifice something!" - Mr. Money
+          cardboards.<q
+            >In order to make the best business posible you should sacrifice
+            something!</q
+          >
+          <cite>- Mr. Money</cite>
         </p>
+      </section>
+      <section id="products">
+        <h2>Our Products</h2>
+        <dl>
+          <dt>Laptops</dt>
+          <dd>HP</dd>
+          <dt>Phones</dt>
+          <dd>Apple</dd>
+          <dd>Xiomi</dd>
+          <dt>Computers</dt>
+          <dd>HP</dd>
+        </dl>
       </section>
       <section id="media">
         <h2>Our Robots</h2>
+        <video width="320" height="240" controls>
+          <source src="./video/robots.mp4" type="video/mp4" />
+          Your browser does not support it
+        </video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/cpraXaw7dyc"
+          allowfullscreen
+        ></iframe>
       </section>
       <section id="goals">
         <h2>Our Goals</h2>
-        <ul>
-          <li>Give people the best products</li>
-          <li>Utilize AI and machines to their fullest potential</li>
+        <ol>
+          <li><del>Give people the best products</del></li>
+          <li><del>Utilize AI and machines to their fullest potential</del></li>
           <li>Zero emmisions and waste</li>
-        </ul>
+        </ol>
       </section>
       <section id="locations">
         <h2>Our Locations</h2>
-        <ul>
-          <li>
-            <h3>New York - 21st Street</h3>
-            <p>An American style place with a feel for US IT power</p>
-          </li>
-          <li>
-            <h3>London - Chelsea 22</h3>
-            <p>An stylish vintage store with modern gadgets</p>
-          </li>
-          <li>
-            <h3>Paris - Le Deux 102</h3>
-            <p>Have the power of the future with the romantisism of France</p>
-          </li>
-        </ul>
+        <details>
+          <summary>New York - 21st Street</summary>
+          <p>An American style place with a feel for US IT power</p>
+        </details>
+        <details>
+          <summary>London - Chelsea 22</summary>
+          <p>An stylish vintage store with modern gadgets</p>
+        </details>
+        <details>
+          <summary>Paris - Le Deux 102</summary>
+          <p>Have the power of the future with the romantisism of France</p>
+        </details>
       </section>
       <section id="polls">
         <h2>Polls</h2>
         <h3>Is AI going to take your job?</h3>
         <ul>
-          <li>Yes 20 Votes</li>
-          <li>No 15 Votes</li>
-          <li>I am not sure 10 Votes</li>
-          <li>What is AI? 12 Votes</li>
+          <li>Yes <meter value="20" min="0" max="57"></meter></li>
+          <li>No <meter value="15" min="0" max="57"></meter></li>
+          <li>I am not sure <meter value="10" min="0" max="57"></meter></li>
+          <li>What is AI? <meter value="12" min="0" max="57"></meter></li>
         </ul>
       </section>
       <section id="message">
         <h2>Leave us a message</h2>
         <form action="/submit" method="post">
-          <label for="name">Name:</label>
-          <br />
-          <input type="text" id="name" name="name" required />
-          <br />
-          <label for="email">Email:</label>
-          <br />
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="question">Your Question:</label>
-          <br />
-          <input type="question" id="question" name="question" />
-          <br />
-          <button type="submit">Submit</button>
+          <fieldset>
+            <legend>Your Question</legend>
+            <label for="name">Name:</label>
+            <br />
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="question">Your Question:</label>
+            <br />
+            <textarea
+              id="question"
+              cols="20"
+              rows="5"
+              name="question"
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </fieldset>
         </form>
       </section>
       <aside id="aside">
         <h2>Elon Musk about Online Shop</h2>
-        <p>
-          Online shop will change the way we do our online and offline shopping.
-          Trully a gamechanger! I can honestly say that this is the most
-          inovative business ever. I have founded Tesla and SpaceX. So go and
-          buy buy buy!
-        </p>
-        Source:
-        <a href="https://trustmebro.square.site/"
-          >https://trustmebro.square.site/</a
-        >
+        <blockquote cite="https://trustmebro.square.site/">
+          <p>
+            Online shop will change the way we do our online and offline
+            shopping. Trully a <span style="color: red">gamechanger</span>! I
+            can honestly say that this is the most inovative business ever. I
+            have founded Tesla and SpaceX. So go and buy buy buy!
+          </p>
+        </blockquote>
       </aside>
     </main>
     <footer id="page-footer">
       <p>All Rights Reserved 2024</p>
-      <p>Last updated on 30.01.2024</p>
+      <small>Last updated on 30.01.2024</small>
     </footer>
   </body>
 </html>
