@@ -1,3 +1,74 @@
-footer {
-  background-color: aqua;
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Selectors, Specificity and Colors */
+
+h1 /*00001*/ {
+  color: rgba(255, 0, 255, 0.5);
+  text-align: center;
+}
+
+.page-header /*00010*/ {
+  background-color: #ffffe0;
+}
+
+[href="#news"] /*10010*/ {
+  color: hsl(120, 100%, 20%) !important;
+}
+
+[href] /*00010*/ {
+  color: rgb(255, 165, 0);
+}
+
+[type="email"] /*00010*/ {
+  color: rgb(173, 255, 47);
+}
+
+#media  /*00100*/ {
+  background-color: #d3d3d3;
+}
+
+/* Combinators */
+.header-first + p {
+  color: blue;
+}
+
+.header-first ~ p {
+  background-color: peachpuff;
+}
+
+#locations p {
+  color: brown;
+}
+
+#locations > p {
+  background-color: lightgreen;
+}
+
+/* Gradients */
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.gr-linear {
+  background: linear-gradient(to right, blue, red);
+}
+
+.gr-linear-repeat {
+  background: repeating-linear-gradient(blue, red 10px, blue 10px);
+}
+
+.gr-radial {
+  background: radial-gradient(circle, red, blue);
+}
+
+.gr-conic {
+  background: conic-gradient(blue, red, blue, red);
 }

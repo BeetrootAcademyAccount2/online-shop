@@ -7,54 +7,15 @@
     <meta name="keywords" content="Online, shop, products, website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Shop</title>
+
     <style>
-      /* 3 */
-
-      /* #news {
-        color: red;
-        background-color: lightblue;
-      } */
-
-      /* section {
-        background-color: orangered !important;
-      } */
-      /* .header-first {
-        background-color: purple;
-      } */
-
-      /* .peach-color {
-        background-color: peachpuff;
-      } */
-
-      [href] {
-        color: rgba(100, 80, 50, 0.5);
-      }
-
-      [type="email"] {
-        color: hsl(69, 63%, 53%);
-      }
-
-      h2 {
-        color: #88ffff;
-      }
-
-      h1 {
-        color: rgba(0, 255, 0, 0.5);
-      }
-
-      div {
-        height: 600px;
-        width: 600px;
-        background: repeating-linear-gradient(
-          blue 20px,
-          red 20px 40px,
-          blue 40px 60px
-        );
+      footer {
+        background-color: aqua;
       }
     </style>
+
     <!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" /> -->
     <!-- <link rel="stylesheet" href="css/reset.css" type="text/css" /> -->
-
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script src="js/script.js" type="text/javascript"></script>
   </head>
@@ -62,7 +23,12 @@
     <!-- This is our Online shop body -->
     <header id="page-header">
       <h1>Online Shop</h1>
-      <div></div>
+      <div class="container">
+        <div class="circle gr-linear"></div>
+        <div class="circle gr-linear-repeat"></div>
+        <div class="circle gr-conic"></div>
+        <div class="circle gr-radial"></div>
+      </div>
       <hr />
       <figure>
         <picture>
@@ -74,7 +40,7 @@
       </figure>
       <nav>
         <ul>
-          <li><a href="">News</a></li>
+          <li><a href="#news">News</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">Contacts</a></li>
           <li><a href="">Working Hours</a></li>
@@ -97,6 +63,15 @@
             Telecommunication giant O<sub>2</sub> to release half of its work
             force in favor of AI
           </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -218,7 +193,7 @@
           <dd>HP</dd>
         </dl>
       </section>
-      <section id="media" class="peach-color">
+      <section id="media">
         <h2>Our Robots</h2>
         <video width="320" height="240" controls>
           <source src="./video/robots.mp4" type="video/mp4" />
@@ -241,6 +216,13 @@
       </section>
       <section id="locations">
         <h2>Our Locations</h2>
+        <p>
+          Discover our diverse range of products and services at our
+          strategically located shops designed to cater to your needs. With a
+          commitment to accessibility and convenience, we have established
+          multiple locations across to ensure you can easily find and enjoy our
+          offerings
+        </p>
         <details>
           <summary>New York - 21st Street</summary>
           <p>An American style place with a feel for US IT power</p>
