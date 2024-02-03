@@ -22,6 +22,25 @@
   <body>
     <!-- This is our Online shop body -->
     <header id="page-header">
+      <div class="nav-container">
+        <h4 class="online-shop">Online shop</h4>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#news">News</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Contacts</a></li>
+            <!-- <li><a href="">Working Hours</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Our goals</a></li>
+            <li><a href="">Our robots</a></li>
+            <li><a href="">Our Location</a></li>
+            <li><a href="">Polls</a></li> -->
+            <!-- <li><a href="">Leave a message</a></li> -->
+            <li><a href="">Sign up/Login</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <h1>Online Shop</h1>
       <div class="container">
         <div class="circle gr-linear"></div>
@@ -38,21 +57,6 @@
 
         <figcaption>Online shop</figcaption>
       </figure>
-      <nav>
-        <ul>
-          <li><a href="#news">News</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Contacts</a></li>
-          <li><a href="">Working Hours</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Our goals</a></li>
-          <li><a href="">Our robots</a></li>
-          <li><a href="">Our Location</a></li>
-          <li><a href="">Polls</a></li>
-          <li><a href="">Leave a message</a></li>
-          <li><a href="">Sign up/Login</a></li>
-        </ul>
-      </nav>
     </header>
     <main id="page-content">
       <!-- News for the Online Shop -->
@@ -90,15 +94,32 @@
             Online shop selling high quality phones for as low as
             19<sup>99</sup>$
           </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <div class="online-shop-article">
+            <p class="first-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex.
+            </p>
+          </div>
+
           <address>
             Written by <a href="mailto:joe@example.com">John Doe</a>
           </address>
@@ -172,9 +193,9 @@
             >We are the only shop with all robot generated personel.</strong
           >
           We provide a wide range of products from laptops to mobile phones. We
-          pride ourselves on having the best quality for the best prices. We
-          have given up on plastic and started to send online orders in
-          cardboards.<q
+          pride ourselves on having the best quality for the
+          <strong class="best-prices-style">best prices</strong> . We have given
+          up on plastic and started to send online orders in cardboards.<q
             >In order to make the best business posible you should sacrifice
             something!</q
           >
@@ -192,6 +213,42 @@
           <dt>Computers</dt>
           <dd>HP</dd>
         </dl>
+
+        <div class="card-list">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+              alt="phone pic"
+            />
+            <div class="p-2">
+              <h4>Awesome</h4>
+              <p>The best phone ever</p>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+              alt="phone pic"
+            />
+            <div class="p-2">
+              <h4>Awesome</h4>
+              <p>The best phone ever</p>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+              alt="phone pic"
+            />
+            <div class="p-2">
+              <h4>Awesome</h4>
+              <p>The best phone ever</p>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="media">
         <h2>Our Robots</h2>
@@ -252,22 +309,16 @@
           <fieldset>
             <legend>Your Question</legend>
             <label for="name">Name:</label>
-            <br />
             <input type="text" id="name" name="name" required />
-            <br />
             <label for="email">Email:</label>
-            <br />
             <input type="email" id="email" name="email" required />
-            <br />
             <label for="question">Your Question:</label>
-            <br />
             <textarea
               id="question"
               cols="20"
               rows="5"
               name="question"
             ></textarea>
-            <br />
             <button type="submit">Submit</button>
           </fieldset>
         </form>
