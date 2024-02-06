@@ -1,0 +1,24 @@
+/* 
+ - space
+ > - bigger than
++ - plus
+~ - tild
+*/
+
+.attention {
+  border: 1px solid red;
+}
+
+.attention-message {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.content > p {
+  color: darkred;
+}
+
+.disclaimer + section {
+  background-color: yellow;
+}

@@ -7,10 +7,16 @@ body {
   padding: 8px;
 }
 /* Center Using auto assigned values for margin */
-.container {
+.container,
+.card-list {
   margin-left: auto;
   margin-right: auto;
   width: 254px;
+}
+
+.card-list {
+  margin: 0 auto 0 auto;
+  width: 900px;
 }
 
 /* Navigation bar */
@@ -54,7 +60,7 @@ body {
 
 .card img {
   width: 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 16px 16px 0 0;
 }
 .card h4 {
   color: white;
@@ -98,11 +104,11 @@ h1 /*00001*/ {
   background-color: #ffffe0;
 }
 
-[href="#news"] /*10010*/ {
+a[href="#news"] /*10010*/ {
   color: hsl(120, 100%, 20%) !important;
 }
 
-[href] /*00010*/ {
+a[href] /*00010*/ {
   color: rgb(255, 165, 0);
 }
 
@@ -156,4 +162,62 @@ h1 /*00001*/ {
 
 .gr-conic {
   background: conic-gradient(blue, red, blue, red);
+}
+
+/* Form and Pseudo Selectors*/
+
+input {
+  outline: none;
+}
+
+input:placeholder-shown {
+  background-color: yellow;
+}
+
+input:valid {
+  border: 2px solid greenyellow;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  background-color: gray;
+}
+
+input:hover {
+  background-color: yellow;
+}
+
+button:disabled {
+  background-color: black;
+  color: white;
+}
+
+label:not([for="email"]) {
+  color: orange;
+}
+
+p::first-line {
+  color: orange;
+}
+
+p::first-letter {
+  font-size: 26px;
+}
+
+p::selection {
+  color: white;
+  background-color: aqua;
+}
+
+input::placeholder,
+input::-moz-placeholder {
+  color: darkorchid;
+  opacity: 1;
+}
+
+section:has(h2) {
+  background-color: red;
 }

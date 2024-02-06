@@ -28,10 +28,10 @@
           <ul>
             <li><a href="#news">News</a></li>
             <li><a href="">Products</a></li>
+            <li><a href="./pages/goals.html">Our goals</a></li>
             <li><a href="">Contacts</a></li>
             <!-- <li><a href="">Working Hours</a></li>
             <li><a href="">About us</a></li>
-            <li><a href="">Our goals</a></li>
             <li><a href="">Our robots</a></li>
             <li><a href="">Our Location</a></li>
             <li><a href="">Polls</a></li> -->
@@ -40,7 +40,6 @@
           </ul>
         </nav>
       </div>
-
       <h1>Online Shop</h1>
       <div class="container">
         <div class="circle gr-linear"></div>
@@ -309,9 +308,17 @@
           <fieldset>
             <legend>Your Question</legend>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
+            <label for="country">Country of Birth:</label>
+            <input type="text" id="country" name="country" />
             <label for="question">Your Question:</label>
             <textarea
               id="question"
@@ -319,10 +326,11 @@
               rows="5"
               name="question"
             ></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit" disabled>Submit</button>
           </fieldset>
         </form>
       </section>
+
       <aside id="aside">
         <h2>Elon Musk about Online Shop</h2>
         <blockquote cite="https://trustmebro.square.site/">
@@ -337,6 +345,7 @@
     </main>
     <footer id="page-footer">
       <p>All Rights Reserved 2024</p>
+      <a href="./pages/terms.html">Terms and conditions</a>
       <small>Last updated on 30.01.2024</small>
     </footer>
   </body>

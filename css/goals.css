@@ -1,0 +1,24 @@
+/* Lists, Pseudo Selectors */
+ul li:first-of-type {
+  color: red;
+}
+
+ol li:first-child li:nth-child(2n + 1) {
+  color: blue;
+}
+
+/* li::marker {
+  content: "+";
+}
+
+li::before {
+  content: "---";
+}
+
+li::after {
+  content: "....";
+} */
+
+ul li:not(:last-child)::after {
+  content: ",";
+}
