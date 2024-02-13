@@ -3,31 +3,43 @@ body {
   padding: 0;
 }
 
-.p-2 {
-  padding: 8px;
-}
-/* Center Using auto assigned values for margin */
-.container,
-.card-list {
-  margin-left: auto;
-  margin-right: auto;
-  width: 254px;
+/* Helper Classes */
+
+.d-flex {
+  display: flex;
 }
 
-.card-list {
-  margin: 0 auto 0 auto;
-  width: 900px;
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-center-h {
+  display: flex;
+  direction: row;
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.p-2 {
+  padding: 8px;
 }
 
 /* Navigation bar */
 .main-nav ul {
-  display: inline-block;
   list-style: none;
-  padding-left: 0;
 }
 
 .main-nav li {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 4px 8px;
 }
 
@@ -41,12 +53,7 @@ body {
 }
 
 .online-shop {
-  display: inline-block;
-}
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 105px);
+  /* display: inline-block; */
 }
 
 /* Card */
@@ -54,7 +61,7 @@ body {
   width: 200px;
   background-color: aqua;
   border-radius: 16px 16px 0 0;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 10px 8px;
 }
 
@@ -69,17 +76,13 @@ body {
   color: white;
 }
 
-.card button {
-  background-color: yellow;
-}
-
 [type="submit"] {
-  display: block;
+  /* display: block; */
 }
 
 input,
 label {
-  display: block;
+  /* display: block; */
 }
 
 .online-shop-article {
@@ -88,7 +91,7 @@ label {
 
 .online-shop-article p {
   border: 2px dotted black;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 10px;
   padding: 20px;
   width: 200px;
@@ -145,7 +148,7 @@ a[href] /*00010*/ {
   border: 1px solid black;
   border-radius: 50%;
   margin: 0 4px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .gr-linear {
@@ -216,8 +219,4 @@ input::placeholder,
 input::-moz-placeholder {
   color: darkorchid;
   opacity: 1;
-}
-
-section:has(h2) {
-  background-color: red;
 }

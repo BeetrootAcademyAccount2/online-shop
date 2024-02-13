@@ -22,10 +22,10 @@
   <body>
     <!-- This is our Online shop body -->
     <header id="page-header">
-      <div class="nav-container">
+      <div class="nav-container d-flex justify-content-between">
         <h4 class="online-shop">Online shop</h4>
         <nav class="main-nav">
-          <ul>
+          <ul class="d-flex">
             <li><a href="#news">News</a></li>
             <li><a href="">Products</a></li>
             <li><a href="./pages/goals.html">Our goals</a></li>
@@ -41,60 +41,33 @@
         </nav>
       </div>
       <h1>Online Shop</h1>
-      <div class="container">
+      <div class="d-flex-center">
         <div class="circle gr-linear"></div>
         <div class="circle gr-linear-repeat"></div>
         <div class="circle gr-conic"></div>
         <div class="circle gr-radial"></div>
       </div>
       <hr />
-      <figure>
+      <figure class="d-flex-center flex-direction-column">
         <picture>
           <source media="(min-width:800px)" srcset="./images/shop-w.jpg" />
-          <img src="./images/shop-s.jpg" alt="shop image" style="width: auto" />
+          <img src="./images/shop-s.jpg" alt="shop image" />
         </picture>
 
         <figcaption>Online shop</figcaption>
       </figure>
     </header>
-    <main id="page-content">
+    <main id="page-content" class="d-flex justify-content-between">
       <!-- News for the Online Shop -->
-      <section id="news">
-        <h2>News</h2>
-        <article>
-          <h3 class="header-first">
-            Telecommunication giant O<sub>2</sub> to release half of its work
-            force in favor of AI
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <address>
-            Written by <a href="mailto:joe@example.com">John Doe</a>
-          </address>
-        </article>
-        <article>
-          <h3>
-            Online shop selling high quality phones for as low as
-            19<sup>99</sup>$
-          </h3>
-          <div class="online-shop-article">
-            <p class="first-p">
+      <div>
+        <section id="news">
+          <h2>News</h2>
+          <article>
+            <h3 class="header-first">
+              Telecommunication giant O<sub>2</sub> to release half of its work
+              force in favor of AI
+            </h3>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -109,228 +82,260 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <address>
+              Written by <a href="mailto:joe@example.com">John Doe</a>
+            </address>
+          </article>
+          <article>
+            <h3>
+              Online shop selling high quality phones for as low as
+              19<sup>99</sup>$
+            </h3>
+            <div class="online-shop-article">
+              <p class="first-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex.
+              </p>
+            </div>
+
+            <address>
+              Written by <a href="mailto:joe@example.com">John Doe</a>
+            </address>
+          </article>
+          <article>
+            <h3>
+              A modern take on the <cite>Godfather</cite>, written by AI,
+              becomes a bestseller
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex.
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-          </div>
-
-          <address>
-            Written by <a href="mailto:joe@example.com">John Doe</a>
-          </address>
-        </article>
-        <article>
-          <h3>
-            A modern take on the <cite>Godfather</cite>, written by AI, becomes
-            a bestseller
-          </h3>
+            <address>
+              Written by <a href="mailto:joe@example.com">John Doe</a>
+            </address>
+          </article>
+          <article>
+            <h3>AI makes the world a better place</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </article>
+          Written by John Doe
+        </section>
+        <section id="working-hours">
+          <h2>Working Hours</h2>
+          <table border="1">
+            <thead>
+              <tr bgcolor="lightblue">
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10:00-18:00</td>
+                <td>10:00-18:00</td>
+                <td>10:00-18:00</td>
+                <td>10:00-18:00</td>
+                <td>10:00-18:00</td>
+                <td>10:00-18:00</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="about" class="peach-color">
+          <h2>About us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Online shop was founded in
+            <time datetime="2020">2020</time> by <em>Mr. Moo Money</em> as part
+            of the
+            <abbr title="Alternative Online Enterprise">AOE</abbr>
+            family.<strong
+              >We are the only shop with all robot generated personel.</strong
+            >
+            We provide a wide range of products from laptops to mobile phones.
+            We pride ourselves on having the best quality for the
+            <strong class="best-prices-style">best prices</strong> . We have
+            given up on plastic and started to send online orders in
+            cardboards.<q
+              >In order to make the best business posible you should sacrifice
+              something!</q
+            >
+            <cite>- Mr. Money</cite>
           </p>
-          <address>
-            Written by <a href="mailto:joe@example.com">John Doe</a>
-          </address>
-        </article>
-        <article>
-          <h3>AI makes the world a better place</h3>
+        </section>
+        <section id="products">
+          <h2>Our Products</h2>
+          <dl>
+            <dt>Laptops</dt>
+            <dd>HP</dd>
+            <dt>Phones</dt>
+            <dd>Apple</dd>
+            <dd>Xiomi</dd>
+            <dt>Computers</dt>
+            <dd>HP</dd>
+          </dl>
+
+          <div class="d-flex-center-h">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+                alt="phone pic"
+              />
+              <div class="p-2">
+                <h4>Awesome</h4>
+                <p>The best phone ever</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+                alt="phone pic"
+              />
+              <div class="p-2">
+                <h4>Awesome</h4>
+                <p>The best phone ever</p>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+                alt="phone pic"
+              />
+              <div class="p-2">
+                <h4>Awesome</h4>
+                <p>The best phone ever</p>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="media">
+          <h2>Our Robots</h2>
+          <video width="320" height="240" controls>
+            <source src="./video/robots.mp4" type="video/mp4" />
+            Your browser does not support it
+          </video>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/cpraXaw7dyc"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="goals">
+          <h2>Our Goals</h2>
+          <ol>
+            <li><del>Give people the best products</del></li>
+            <li>
+              <del>Utilize AI and machines to their fullest potential</del>
+            </li>
+            <li>Zero emmisions and waste</li>
+          </ol>
+        </section>
+        <section id="locations">
+          <h2>Our Locations</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Discover our diverse range of products and services at our
+            strategically located shops designed to cater to your needs. With a
+            commitment to accessibility and convenience, we have established
+            multiple locations across to ensure you can easily find and enjoy
+            our offerings
           </p>
-        </article>
-        Written by John Doe
-      </section>
-      <section id="working-hours">
-        <h2>Working Hours</h2>
-        <table border="1">
-          <thead>
-            <tr bgcolor="lightblue">
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-              <th>Thursday</th>
-              <th>Friday</th>
-              <th>Saturday</th>
-              <th>Sunday</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>10:00-18:00</td>
-              <td>10:00-18:00</td>
-              <td>10:00-18:00</td>
-              <td>10:00-18:00</td>
-              <td>10:00-18:00</td>
-              <td>10:00-18:00</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="about" class="peach-color">
-        <h2>About us</h2>
-        <p>
-          Online shop was founded in
-          <time datetime="2020">2020</time> by <em>Mr. Moo Money</em> as part of
-          the
-          <abbr title="Alternative Online Enterprise">AOE</abbr> family.<strong
-            >We are the only shop with all robot generated personel.</strong
-          >
-          We provide a wide range of products from laptops to mobile phones. We
-          pride ourselves on having the best quality for the
-          <strong class="best-prices-style">best prices</strong> . We have given
-          up on plastic and started to send online orders in cardboards.<q
-            >In order to make the best business posible you should sacrifice
-            something!</q
-          >
-          <cite>- Mr. Money</cite>
-        </p>
-      </section>
-      <section id="products">
-        <h2>Our Products</h2>
-        <dl>
-          <dt>Laptops</dt>
-          <dd>HP</dd>
-          <dt>Phones</dt>
-          <dd>Apple</dd>
-          <dd>Xiomi</dd>
-          <dt>Computers</dt>
-          <dd>HP</dd>
-        </dl>
-
-        <div class="card-list">
-          <div class="card">
-            <img
-              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
-              alt="phone pic"
-            />
-            <div class="p-2">
-              <h4>Awesome</h4>
-              <p>The best phone ever</p>
-              <button>Buy</button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
-              alt="phone pic"
-            />
-            <div class="p-2">
-              <h4>Awesome</h4>
-              <p>The best phone ever</p>
-              <button>Buy</button>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
-              alt="phone pic"
-            />
-            <div class="p-2">
-              <h4>Awesome</h4>
-              <p>The best phone ever</p>
-              <button>Buy</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="media">
-        <h2>Our Robots</h2>
-        <video width="320" height="240" controls>
-          <source src="./video/robots.mp4" type="video/mp4" />
-          Your browser does not support it
-        </video>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/cpraXaw7dyc"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section id="goals">
-        <h2>Our Goals</h2>
-        <ol>
-          <li><del>Give people the best products</del></li>
-          <li><del>Utilize AI and machines to their fullest potential</del></li>
-          <li>Zero emmisions and waste</li>
-        </ol>
-      </section>
-      <section id="locations">
-        <h2>Our Locations</h2>
-        <p>
-          Discover our diverse range of products and services at our
-          strategically located shops designed to cater to your needs. With a
-          commitment to accessibility and convenience, we have established
-          multiple locations across to ensure you can easily find and enjoy our
-          offerings
-        </p>
-        <details>
-          <summary>New York - 21st Street</summary>
-          <p>An American style place with a feel for US IT power</p>
-        </details>
-        <details>
-          <summary>London - Chelsea 22</summary>
-          <p>An stylish vintage store with modern gadgets</p>
-        </details>
-        <details>
-          <summary>Paris - Le Deux 102</summary>
-          <p>Have the power of the future with the romantisism of France</p>
-        </details>
-      </section>
-      <section id="polls">
-        <h2>Polls</h2>
-        <h3>Is AI going to take your job?</h3>
-        <ul>
-          <li>Yes <meter value="20" min="0" max="57"></meter></li>
-          <li>No <meter value="15" min="0" max="57"></meter></li>
-          <li>I am not sure <meter value="10" min="0" max="57"></meter></li>
-          <li>What is AI? <meter value="12" min="0" max="57"></meter></li>
-        </ul>
-      </section>
-      <section id="message">
-        <h2>Leave us a message</h2>
-        <form action="/submit" method="post">
-          <fieldset>
-            <legend>Your Question</legend>
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              required
-            />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="country">Country of Birth:</label>
-            <input type="text" id="country" name="country" />
-            <label for="question">Your Question:</label>
-            <textarea
-              id="question"
-              cols="20"
-              rows="5"
-              name="question"
-            ></textarea>
-            <button type="submit" disabled>Submit</button>
-          </fieldset>
-        </form>
-      </section>
-
+          <details>
+            <summary>New York - 21st Street</summary>
+            <p>An American style place with a feel for US IT power</p>
+          </details>
+          <details>
+            <summary>London - Chelsea 22</summary>
+            <p>An stylish vintage store with modern gadgets</p>
+          </details>
+          <details>
+            <summary>Paris - Le Deux 102</summary>
+            <p>Have the power of the future with the romantisism of France</p>
+          </details>
+        </section>
+        <section id="polls">
+          <h2>Polls</h2>
+          <h3>Is AI going to take your job?</h3>
+          <ul>
+            <li>Yes <meter value="20" min="0" max="57"></meter></li>
+            <li>No <meter value="15" min="0" max="57"></meter></li>
+            <li>I am not sure <meter value="10" min="0" max="57"></meter></li>
+            <li>What is AI? <meter value="12" min="0" max="57"></meter></li>
+          </ul>
+        </section>
+        <section id="message">
+          <h2>Leave us a message</h2>
+          <form action="/submit" method="post">
+            <fieldset class="d-flex flex-direction-column">
+              <legend>Your Question</legend>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <label for="country">Country of Birth:</label>
+              <input type="text" id="country" name="country" />
+              <label for="question">Your Question:</label>
+              <textarea
+                id="question"
+                cols="20"
+                rows="5"
+                name="question"
+              ></textarea>
+              <button type="submit" disabled>Submit</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
       <aside id="aside">
         <h2>Elon Musk about Online Shop</h2>
         <blockquote cite="https://trustmebro.square.site/">
@@ -343,6 +348,7 @@
         </blockquote>
       </aside>
     </main>
+
     <footer id="page-footer">
       <p>All Rights Reserved 2024</p>
       <a href="./pages/terms.html">Terms and conditions</a>
