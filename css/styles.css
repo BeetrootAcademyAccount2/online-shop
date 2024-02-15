@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: pink;
 }
 
 /* Helper Classes */
@@ -57,4 +58,72 @@ body {
 
 .gr-conic {
   background: conic-gradient(blue, red, blue, red);
+}
+
+/*BEM*/
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff8800;
+}
+
+.main-navigation__list {
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation__item {
+  margin: 4px;
+  color: #ffffff;
+}
+
+.main-navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation__link--green {
+  color: green;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0 20px;
+  width: 320px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 16px;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card__desc {
+  margin-bottom: 12px;
+}
+
+.card__btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }

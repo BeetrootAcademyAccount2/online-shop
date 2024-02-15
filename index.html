@@ -22,24 +22,36 @@
   <body>
     <!-- This is our Online shop body -->
     <header id="page-header">
-      <div>
-        <h4>Online shop</h4>
-        <nav>
-          <ul>
-            <li><a href="#news">News</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="./pages/goals.html">Our goals</a></li>
-            <li><a href="">Contacts</a></li>
-            <!-- <li><a href="">Working Hours</a></li>
+      <nav class="main-navigation">
+        <h4 class="main-navigation__title">Online shop</h4>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a
+              href="#news"
+              class="main-navigation__link main-navigation__link--green"
+              >News</a
+            >
+          </li>
+          <li class="main-navigation__item">
+            <a href="" class="main-navigation__link">Products</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="./pages/goals.html" class="main-navigation__link"
+              >Our goals</a
+            >
+          </li>
+          <li class="main-navigation__item">
+            <a href="" class="main-navigation__link">Contacts</a>
+          </li>
+          <!-- <li><a href="">Working Hours</a></li>
             <li><a href="">About us</a></li>
             <li><a href="">Our robots</a></li>
             <li><a href="">Our Location</a></li>
             <li><a href="">Polls</a></li> -->
-            <!-- <li><a href="">Leave a message</a></li> -->
-            <li><a href="">Sign up/Login</a></li>
-          </ul>
-        </nav>
-      </div>
+          <!-- <li><a href="">Leave a message</a></li> -->
+          <li class="main-navigation__item"><a href="">Sign up/Login</a></li>
+        </ul>
+      </nav>
       <h1>Online Shop</h1>
       <div>
         <div class="circle gr-linear"></div>
@@ -215,41 +227,44 @@
             <dd>HP</dd>
           </dl>
 
-          <div>
-            <div>
+          <div class="card-list">
+            <div class="card">
               <img
+                class="card__img"
                 width="100px"
                 src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
                 alt="phone pic"
               />
-              <div>
-                <h4>Awesome</h4>
-                <p>The best phone ever</p>
-                <button>Buy</button>
+              <div class="card__content">
+                <h4 class="card__title">Awesome</h4>
+                <p class="card__desc">The best phone ever</p>
+                <button class="card__btn">Buy</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img
+                class="card__img"
                 width="100px"
                 src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
                 alt="phone pic"
               />
-              <div>
-                <h4>Awesome</h4>
-                <p>The best phone ever</p>
-                <button>Buy</button>
+              <div class="card__content">
+                <h4 class="card__title">Awesome</h4>
+                <p class="card__desc">The best phone ever</p>
+                <button class="card__btn">Buy</button>
               </div>
             </div>
-            <div>
+            <div class="card">
               <img
+                class="card__img"
                 width="100px"
                 src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
                 alt="phone pic"
               />
-              <div>
-                <h4>Awesome</h4>
-                <p>The best phone ever</p>
-                <button>Buy</button>
+              <div class="card__content">
+                <h4 class="card__title">Awesome</h4>
+                <p class="card__desc">The best phone ever</p>
+                <button class="card__btn">Buy</button>
               </div>
             </div>
           </div>
