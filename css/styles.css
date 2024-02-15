@@ -33,113 +33,6 @@ body {
   padding: 8px;
 }
 
-/* Navigation bar */
-.main-nav ul {
-  list-style: none;
-}
-
-.main-nav li {
-  /* display: inline-block; */
-  margin: 4px 8px;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-container {
-  background-color: #0088ff;
-}
-
-.online-shop {
-  /* display: inline-block; */
-}
-
-/* Card */
-.card {
-  width: 200px;
-  background-color: aqua;
-  border-radius: 16px 16px 0 0;
-  /* display: inline-block; */
-  margin: 10px 8px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 16px 16px 0 0;
-}
-.card h4 {
-  color: white;
-}
-.card p {
-  color: white;
-}
-
-[type="submit"] {
-  /* display: block; */
-}
-
-input,
-label {
-  /* display: block; */
-}
-
-.online-shop-article {
-  background-color: yellow;
-}
-
-.online-shop-article p {
-  border: 2px dotted black;
-  /* display: inline-block; */
-  margin: 10px;
-  padding: 20px;
-  width: 200px;
-}
-/* Selectors, Specificity and Colors */
-
-h1 /*00001*/ {
-  color: rgba(255, 0, 255, 0.5);
-  text-align: center;
-}
-
-.page-header /*00010*/ {
-  background-color: #ffffe0;
-}
-
-a[href="#news"] /*10010*/ {
-  color: hsl(120, 100%, 20%) !important;
-}
-
-a[href] /*00010*/ {
-  color: rgb(255, 165, 0);
-}
-
-[type="email"] /*00010*/ {
-  color: rgb(173, 255, 47);
-}
-
-#media  /*00100*/ {
-  background-color: #d3d3d3;
-}
-
-/* Combinators */
-.header-first + p {
-  color: blue;
-}
-
-.header-first ~ p {
-  background-color: peachpuff;
-}
-
-#locations p {
-  color: brown;
-}
-
-#locations > p {
-  background-color: lightgreen;
-}
-
 /* Gradients */
 
 .circle {
@@ -148,7 +41,6 @@ a[href] /*00010*/ {
   border: 1px solid black;
   border-radius: 50%;
   margin: 0 4px;
-  /* display: inline-block; */
 }
 
 .gr-linear {
@@ -165,58 +57,4 @@ a[href] /*00010*/ {
 
 .gr-conic {
   background: conic-gradient(blue, red, blue, red);
-}
-
-/* Form and Pseudo Selectors*/
-
-input {
-  outline: none;
-}
-
-input:placeholder-shown {
-  background-color: yellow;
-}
-
-input:valid {
-  border: 2px solid greenyellow;
-}
-
-input:invalid {
-  border: 2px solid red;
-}
-
-input:focus {
-  background-color: gray;
-}
-
-input:hover {
-  background-color: yellow;
-}
-
-button:disabled {
-  background-color: black;
-  color: white;
-}
-
-label:not([for="email"]) {
-  color: orange;
-}
-
-p::first-line {
-  color: orange;
-}
-
-p::first-letter {
-  font-size: 26px;
-}
-
-p::selection {
-  color: white;
-  background-color: aqua;
-}
-
-input::placeholder,
-input::-moz-placeholder {
-  color: darkorchid;
-  opacity: 1;
 }
