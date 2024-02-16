@@ -3,36 +3,6 @@ body {
   padding: 0;
 }
 
-/* Helper Classes */
-
-.d-flex {
-  display: flex;
-}
-
-.d-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.d-flex-center-h {
-  display: flex;
-  direction: row;
-  justify-content: center;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.flex-direction-column {
-  flex-direction: column;
-}
-
-.p-2 {
-  padding: 8px;
-}
-
 /* Gradients */
 
 .circle {
@@ -57,4 +27,14 @@ body {
 
 .gr-conic {
   background: conic-gradient(blue, red, blue, red);
+}
+
+/* Additional Styling */
+
+.card-w {
+  width: 280px;
+}
+
+.aside-w {
+  width: 800px;
 }
