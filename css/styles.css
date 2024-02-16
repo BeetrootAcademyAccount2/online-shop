@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: pink;
 }
 
 /* Helper Classes */
 
-.d-flex {
+/* .d-flex {
   display: flex;
 }
 
@@ -32,7 +31,7 @@ body {
 
 .p-2 {
   padding: 8px;
-}
+} */
 
 /* Gradients */
 
@@ -62,11 +61,38 @@ body {
 
 /*BEM*/
 
+/* Header */
+
+.header__title {
+  text-align: center;
+}
+
+.circle-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px 0;
+}
+
 /*Navigation*/
 .main-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #0dcaf0;
+  padding: 0 12px;
+}
+
+.main-navigation__title {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
 }
 
 .main-navigation__list {
@@ -77,6 +103,7 @@ body {
 .main-navigation__item {
   margin: 4px;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .main-navigation__link {
@@ -88,17 +115,47 @@ body {
   color: green;
 }
 
+/* Main */
+
+.main {
+  padding: 0 48px 48px;
+  display: flex;
+}
+
 /* Card */
+
+.products {
+  background-color: #0dcaf0;
+  border-radius: 0.375rem;
+  padding: 48px;
+}
+
+.products__title {
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.products__list {
+  margin-left: 48px;
+}
+
+.products__category {
+  font-weight: 700;
+}
+
+.products__item {
+  margin-left: 8px;
+}
 
 .card-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .card {
-  margin: 0 20px;
-  width: 320px;
+  width: 240px;
   border-radius: 16px;
   background-color: #ffffff;
   overflow: hidden;
@@ -130,31 +187,125 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+/*News*/
 
-.message
+.news-article-list {
+  border-radius: 0.375rem;
+  border: 1px solid #0dcaf0;
+  background-color: #0dcaf0;
+  padding: 48px;
+}
+
+.news-article-list__title {
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.news-article {
+  padding: 0 48px;
+}
+
+/* Working Hours */
+
+/* Table styles */
+.working-hours__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table header styles */
+.working-hours__head {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Table row styles */
+.working-hours__row--headers {
+  background-color: #cfe2ff;
+}
+
+.working-hours__row {
+  background-color: #cff4fc;
+}
+.working-hours__time {
+  padding: 10px;
+  text-align: center;
+}
+
+.working-hours__day {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Title styles */
+.working-hours__title {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Message */
+
+.message {
+  border-radius: 0.375rem;
+  border: 1px solid #0dcaf0;
+  padding: 24;
+  display: flex;
+  flex-direction: column;
+}
+
+.message__title {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.message__form {
+  padding: 20px;
+}
+
+.message__input,
+.message__label,
+.message__textarea {
+  margin-bottom: 8px;
+}
+
+.message__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.message__button {
+  color: white;
+  border-radius: 0.375rem;
+  border: 1px solid #0dcaf0;
+  background-color: #0dcaf0;
+  line-height: 2;
+}
 
 /* Aside */
 
-.aside {
-  margin: 20px;
+.aside__title {
+  margin-left: 20px;
 }
 
 .aside__highlight {
   background-color: yellow;
-  color: white;
 }
 
 /* Footer */
 
 .page-footer {
   background-color: #f8f9fa;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   align-items: center;
   padding: 16px;
+  background-color: #f8f9fa;
 }
 
-.page-footer__copyright {
+.page-footer__link {
   color: #000000;
 }
 

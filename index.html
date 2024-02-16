@@ -36,32 +36,34 @@
               >Our goals</a
             >
           </li>
-          <li class="main-navigation__item"><a href="">Sign in</a></li>
+          <li class="main-navigation__item">
+            <a href="" class="main-navigation__link">Sign in</a>
+          </li>
           <li class="main-navigation__item">
             <a href="" class="main-navigation__link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <h1>Online Shop</h1>
-      <div>
+      <h1 class="header__title">Online Shop</h1>
+      <div class="circle-list">
         <div class="circle gr-linear"></div>
         <div class="circle gr-linear-repeat"></div>
         <div class="circle gr-conic"></div>
         <div class="circle gr-radial"></div>
       </div>
       <hr />
-      <figure>
-        <picture>
+      <figure class="header-image">
+        <picture class="header-image__picture">
           <source media="(min-width:800px)" srcset="./images/shop-w.jpg" />
           <img src="./images/shop-s.jpg" alt="shop image" />
         </picture>
 
-        <figcaption>Online shop</figcaption>
+        <figcaption class="header-image__caption">Online shop</figcaption>
       </figure>
     </header>
-    <main id="page-content">
+    <main id="page-content" class="main">
       <!-- News for the Online Shop -->
-      <div>
+      <div class="main-content">
         <section id="news" class="news-article-list">
           <h2 class="news-article-list__title">News</h2>
           <article class="news-article">
@@ -137,6 +139,9 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <address class="news-article__author">
+              Written by <a href="mailto:joe@example.com">John Doe</a>
+            </address>
           </article>
           <article class="news-article">
             <h3 class="news-article__title">
@@ -159,8 +164,8 @@
         <section id="working-hours" class="working-hours">
           <h2 class="working-hours__title">Working Hours</h2>
           <table class="working-hours__table">
-            <thead>
-              <tr>
+            <thead class="working-hours__head">
+              <tr class="working-hours__row--headers">
                 <th class="working-hours__day">Monday</th>
                 <th class="working-hours__day">Tuesday</th>
                 <th class="working-hours__day">Wednesday</th>
@@ -403,13 +408,17 @@
     </main>
 
     <footer id="page-footer" class="page-footer">
-      <span class="page-footer__copyright">All Rights Reserved 2024:</span>
+      <span class="page-footer__copyright">
+        &copy All Rights Reserved 2024:</span
+      >
       <a href="./pages/terms.html" class="page-footer__link"
         >Terms and conditions</a
       >
-      <small class="page-footer__last-updated"
-        >Last updated on 30.01.2024</small
-      >
+      <p>
+        <small class="page-footer__last-updated"
+          >Last updated on 30.01.2024</small
+        >
+      </p>
     </footer>
   </body>
 </html>
