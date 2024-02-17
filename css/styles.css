@@ -246,6 +246,31 @@ body {
   margin-bottom: 10px;
 }
 
+/* Locations */
+
+.locations {
+  border-radius: 0.375rem;
+  border: 1px solid #0dcaf0;
+  background-color: #0dcaf0;
+  padding: 48px;
+}
+
+.locations__title {
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.locations__description,
+.locations__details {
+  padding: 0 48px;
+}
+
+.locations__img {
+  width: 100%;
+  margin-top: 24px;
+}
+
 /* Message */
 
 .message {
