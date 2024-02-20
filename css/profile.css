@@ -1,0 +1,22 @@
+body {
+  background-color: #ffe4c4;
+  padding: 20px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+input {
+  outline: none;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+  max-height: 300px;
+}

@@ -131,6 +131,10 @@ body {
   font-weight: 700;
 }
 
+.main-navigation__icon {
+  margin: 6px 4px 0;
+}
+
 .main-navigation__link {
   color: #ffffff;
   text-decoration: none;
